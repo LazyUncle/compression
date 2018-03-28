@@ -116,7 +116,7 @@ function compression (options) {
         : stream.end()
     }
 
-    res.on = function on (type, listener) {
+    res.on2 = function on (type, listener) {
       if (!listeners || type !== 'drain') {
         return _on.call(this, type, listener)
       }
